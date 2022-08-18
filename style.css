@@ -1,0 +1,47 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.navbar .nav-items {
+  display: flex;
+}
+.navbar .nav-items .nav-item {
+  padding: 4rem;
+}
+
+.header {
+  background-image: url(images/header2.svg), url(images/header2.svg);
+  height: 50vh;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  background-size: auto, 125px 175px;
+}
+
+img {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
