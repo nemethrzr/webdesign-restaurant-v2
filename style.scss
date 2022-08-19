@@ -107,48 +107,19 @@ p {
     padding: 2rem;
 }
 
-.best-seller {
-    text-align: center;
-    .items {
-        display: flex;
-        flex-direction: column;
-        
-        gap: 4rem;
-        padding-top: 4rem;
-        .item {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 4rem;
-            div {
-                image {
-                    margin: 0 auto;
-                }
-            }
-        }
-        .item:before{
-            content: '';
-            background-color: #2f2f2f;
-            width: 100%;
-            height: 1px;
-            box-shadow: 1px 3px 5px $bg-color;
-        }
-    }
-}
 @media only screen and(max-width:600px) {
     .navbar {
         padding: 0;
         flex-direction: column;
         justify-content: flex-start;
-        
+
         align-items: flex-start;
 
         position: absolute;
         background-color: #2f2f2fb9;
         .brand-logo {
             position: absolute;
-            top: 2rem;
+            top: 2.5rem;
             right: 2rem;
         }
         .menu {
@@ -196,15 +167,16 @@ p {
 
         /* display: none;*/
     }
-
+    /*Fejléc formázása*/
     .header {
         height: 100vh;
+        max-height: 796px; /*max magasság a kép mérete miatt*/
 
         .header-content {
             background-position-y: 380px;
             background-position-x: 240px;
             /* background-color: #2f2f2f6e;*/
-            height: 100%;
+            height: 100vh;
 
             color: $primary-color;
             display: flex;
@@ -222,6 +194,103 @@ p {
                 background-color: #2f2f2fb2;
                 border-radius: 0.5rem;
                 padding: 1rem;
+            }
+        }
+    }
+
+    .best-seller {
+        text-align: center;
+        .items {
+            display: flex;
+            flex-direction: column;
+
+            gap: 4rem;
+            padding-top: 4rem;
+            .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+                div {
+                    image {
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .item:before {
+                content: "";
+                background-color: #2f2f2f;
+                width: 100%;
+                height: 1px;
+                box-shadow: 1px 3px 5px $bg-color;
+            }
+        }
+    }
+    .oriental-taste {
+        padding: 0;
+        color: $primary-color;
+        p {
+            padding: 2rem 0;
+        }
+        .oriental-taste-header {
+            padding: 2rem;
+            background-image: url(images/bg.png);
+            background-size: 260%;
+            img {
+                width: 80%;
+            }
+        }
+        .oriental-taste-body {
+            padding: 2rem;
+            background-color: $bg-color;
+            .statistics {
+                padding-top: 2rem;
+                display: flex;
+
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                gap: 2rem;
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 4rem;
+                    border: 0.5rem solid $white;
+                    border-radius: 50%;
+
+                    width: 12rem;
+                    height: 12rem;
+                    text-align: center;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    .count {
+                        color: $primary-color;
+                    }
+                    .text {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .oriental-taste-footer {
+            padding: 2rem;
+            height: 400px;
+            background-image: url(images/bg-footer.png);
+            background-repeat: no-repeat;
+            background-position-y: -400px;
+            background-position-x: -400px;
+            background-size: 260%;
+            position: relative;
+            img {
+                width: 60%;
+                position: absolute;
+                right: 0;
+                bottom: -5rem;
             }
         }
     }
