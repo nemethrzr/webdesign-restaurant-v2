@@ -8,6 +8,10 @@ html {
   padding: 0;
 }
 
+.visible-on-mobile {
+  display: none;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -28,6 +32,9 @@ p {
   padding-right: 4rem;
   position: absolute;
   width: 100vw;
+}
+.navbar .menu {
+  display: none;
 }
 .navbar .nav-items {
   display: flex;
@@ -66,4 +73,59 @@ p {
   background-position-x: 440px;
   width: 100vw;
   height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    background-color: rgba(47, 47, 47, 0.7254901961);
+    /* display: none;*/
+  }
+  .navbar .brand-logo {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .navbar .menu {
+    display: block;
+    padding: 2rem;
+  }
+  .navbar .menu a {
+    font-size: 3rem;
+  }
+  .navbar .nav-items {
+    display: none;
+    width: 100%;
+  }
+  .navbar .nav-items .nav-item {
+    padding: 2rem;
+  }
+  .navbar .nav-items.active {
+    display: block;
+  }
+  .navbar .nav-items.active .visible-on-mobile {
+    display: block;
+  }
+  .navbar .nav-items.active .search {
+    display: flex;
+  }
+  .navbar .nav-items.active .search input[type=text] {
+    height: 4rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+  }
+  .navbar .nav-items.active .search button {
+    position: absolute;
+    color: #2F2F2F;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    z-index: 2;
+  }
 }/*# sourceMappingURL=style.css.map */
