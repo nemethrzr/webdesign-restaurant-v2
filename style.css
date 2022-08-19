@@ -105,6 +105,15 @@ p {
   padding: 2rem;
 }
 
+/*
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+*/
+/*Small devices */
 @media only screen and (max-width: 600px) {
   .navbar {
     padding: 0;
@@ -290,6 +299,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 10rem 0;
   }
   .subscribe .subscribe-form {
     font-size: 2rem;
@@ -318,6 +328,487 @@ p {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    padding-right: 2rem;
+  }
+  .footer .text .social {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .nav ul {
+    list-style-type: none;
+    padding: 2rem 0;
+  }
+  .footer .nav ul li {
+    padding: 0.2rem 0;
+  }
+  .footer .nav ul li a {
+    font-weight: 100;
+    color: #ffffff;
+  }
+}
+/*
+
+    Tablets Airpad ... etc
+
+*/
+@media only screen and (min-width: 600px) {
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    background-color: rgba(47, 47, 47, 0.7254901961);
+    /* display: none;*/
+  }
+  .navbar .brand-logo {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+  }
+  .navbar .menu {
+    display: block;
+    padding: 2rem;
+  }
+  .navbar .menu a {
+    font-size: 3rem;
+  }
+  .navbar .nav-items {
+    display: none;
+    width: 100%;
+  }
+  .navbar .nav-items .nav-item {
+    padding: 2rem;
+  }
+  .navbar .nav-items.active {
+    display: block;
+  }
+  .navbar .nav-items.active .visible-on-mobile {
+    display: block;
+  }
+  .navbar .nav-items.active .search {
+    display: flex;
+  }
+  .navbar .nav-items.active .search input[type=text] {
+    height: 4rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+  }
+  .navbar .nav-items.active .search button {
+    position: absolute;
+    color: #2f2f2f;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    z-index: 2;
+  }
+  /*Fejléc formázása*/
+  .header {
+    height: 100vh;
+    max-height: 796px; /*max magasság a kép mérete miatt*/
+  }
+  .header .header-content {
+    background-position-y: -50px;
+    background-position-x: 440px;
+    /* background-color: #2f2f2f6e;*/
+    height: 100vh;
+    color: #fec201;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 2rem;
+    text-align: left;
+    padding: 2rem;
+  }
+  .header .header-content h1,
+.header .header-content p {
+    background-color: rgba(47, 47, 47, 0.6980392157);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  .best-seller {
+    text-align: center;
+  }
+  .best-seller .items {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 4rem;
+  }
+  .best-seller .items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .best-seller .items .item div image {
+    margin: 0 auto;
+  }
+  .best-seller .items .item:before {
+    content: "";
+    background-color: #2f2f2f;
+    width: 100%;
+    height: 1px;
+    box-shadow: 1px 3px 5px #2f2f2f;
+  }
+  .oriental-taste {
+    padding: 0;
+    color: #fec201;
+  }
+  .oriental-taste p {
+    padding: 2rem 0;
+  }
+  .oriental-taste .oriental-taste-header {
+    padding: 2rem;
+    background-image: url(images/bg.png);
+    background-size: 260%;
+  }
+  .oriental-taste .oriental-taste-header img {
+    width: 60%;
+  }
+  .oriental-taste .oriental-taste-body {
+    padding: 2rem;
+    background-color: #2f2f2f;
+  }
+  .oriental-taste .oriental-taste-body .statistics {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .oriental-taste .oriental-taste-body .statistics .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    border: 0.5rem solid #ffffff;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .oriental-taste .oriental-taste-body .statistics .item .count {
+    color: #fec201;
+  }
+  .oriental-taste .oriental-taste-body .statistics .item .text {
+    color: #ffffff;
+  }
+  .oriental-taste .oriental-taste-footer {
+    padding: 2rem;
+    height: 400px;
+    background-image: url(images/bg-footer.png);
+    background-repeat: no-repeat;
+    background-position-y: -900px;
+    background-position-x: -800px;
+    background-size: 230%;
+    position: relative;
+  }
+  .oriental-taste .oriental-taste-footer img {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: -20rem;
+  }
+  .quote {
+    margin-top: 30rem;
+    background: linear-gradient(0deg, rgba(218, 233, 12, 0.3), rgba(233, 164, 17, 0.774)), url("images/bg-quote.png");
+    background-position-x: 0, -14rem;
+    background-position-y: 0, -24rem;
+    padding: 10rem 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .quote h3 {
+    padding-top: 2rem;
+  }
+  .subscribe {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10rem 0;
+  }
+  .subscribe .subscribe-form {
+    font-size: 2rem;
+  }
+  .subscribe .subscribe-form input[type=email] {
+    border: 1px solid rgb(243, 238, 238);
+    padding: 1rem;
+  }
+  .subscribe .subscribe-form button {
+    background-color: #fec201;
+    /*border-t használom az input és a button elem közti magasság kiküszöbölésére*/
+    border: 1px solid #fec201;
+    padding: 1rem;
+    text-transform: capitalize;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f2f2f;
+    color: #ffffff;
+  }
+  .footer h3 {
+    font-family: "Roboto";
+  }
+  .footer .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 2rem;
+    width: 50%;
+  }
+  .footer .text .social {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .nav {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  .footer .nav ul {
+    list-style-type: none;
+    padding: 2rem 0;
+  }
+  .footer .nav ul li {
+    padding: 0.2rem 0;
+  }
+  .footer .nav ul li a {
+    font-weight: 100;
+    color: #ffffff;
+  }
+}
+/* for desktop */
+@media only screen and (min-width: 992px) {
+  .link {
+    font-size: 4rem;
+  }
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    /* display: none;*/
+  }
+  .navbar .brand-logo {
+    position: static;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .nav-items {
+    align-items: end;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar .nav-items a {
+    font-size: 4rem;
+  }
+  .navbar .search {
+    margin-left: 10rem;
+  }
+  .navbar .search button {
+    font-size: 4rem;
+  }
+  /*Fejléc formázása*/
+  .header {
+    height: 796px;
+    max-height: 796px; /*max magasság a kép mérete miatt*/
+  }
+  .header .header-content {
+    /* background-color: #2f2f2f6e;*/
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+    gap: 10rem;
+    padding: 2rem;
+    padding-right: 20rem;
+  }
+  .header .header-content h1 {
+    font-size: 10rem;
+  }
+  .header .header-content h1,
+.header .header-content p {
+    background-color: rgba(47, 47, 47, 0.6980392157);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 50%;
+  }
+  p {
+    font-size: 3rem;
+  }
+  h3 {
+    padding-top: 2rem;
+    font-size: 5rem;
+  }
+  .content {
+    padding: 20rem 0;
+  }
+  .content h2 {
+    font-size: 8rem;
+  }
+  .best-seller {
+    text-align: center;
+    margin-top: 10rem;
+    padding: 20rem;
+  }
+  .best-seller h2 {
+    padding: 10rem;
+  }
+  .best-seller p {
+    padding: 10rem;
+  }
+  .best-seller .items {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .best-seller .items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .best-seller .items .item div image {
+    margin: 0 auto;
+  }
+  .best-seller .items .item:before {
+    content: "";
+    background-color: #2f2f2f;
+    width: 0;
+    height: 0;
+    box-shadow: none;
+  }
+  .oriental-taste {
+    color: #fec201;
+  }
+  .oriental-taste p {
+    padding: 2rem 0;
+  }
+  .oriental-taste .oriental-taste-header {
+    padding: 20rem;
+    background-image: url(images/bg.png);
+    background-size: 100%;
+  }
+  .oriental-taste .oriental-taste-header img {
+    width: 400px;
+  }
+  .oriental-taste .oriental-taste-body {
+    padding: 20rem;
+    background-color: #2f2f2f;
+  }
+  .oriental-taste .oriental-taste-body .statistics {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .oriental-taste .oriental-taste-body .statistics .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    border: 0.5rem solid #ffffff;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .oriental-taste .oriental-taste-body .statistics .item .count {
+    color: #fec201;
+  }
+  .oriental-taste .oriental-taste-body .statistics .item .text {
+    color: #ffffff;
+  }
+  .oriental-taste .oriental-taste-footer {
+    padding: 20rem;
+    height: 800px;
+    background-image: url(images/bg-footer.png);
+    background-position-y: -800px;
+    background-position-x: 0;
+    background-size: 2000px;
+    position: relative;
+  }
+  .oriental-taste .oriental-taste-footer img {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+  }
+  .quote {
+    margin-top: 15rem;
+    background: linear-gradient(0deg, rgba(218, 233, 12, 0.3), rgba(233, 164, 17, 0.774)), url("images/bg-quote.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40rem 50rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .subscribe {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 20rem;
+  }
+  .subscribe .subscribe-form input[type=email] {
+    border: 1px solid rgb(243, 238, 238);
+    width: 50rem;
+    height: 8rem;
+    padding: 1rem;
+    font-size: 4rem;
+  }
+  .subscribe .subscribe-form button {
+    background-color: #fec201;
+    /*border-t használom az input és a button elem közti magasság kiküszöbölésére*/
+    border: 1px solid #fec201;
+    padding: 1rem;
+    text-transform: capitalize;
+    height: 8rem;
+    font-size: 4rem;
+  }
+  .footer {
+    display: flex;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer h3 {
+    font-family: "Roboto";
+  }
+  .footer .social i {
+    font-size: 10rem;
+  }
+  .footer .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
     padding-right: 2rem;
   }
   .footer .text .social {
