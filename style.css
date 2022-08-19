@@ -272,4 +272,37 @@ p {
     right: 0;
     bottom: -5rem;
   }
+  .quote {
+    margin-top: 15rem;
+    background: linear-gradient(0deg, rgba(218, 233, 12, 0.3), rgba(233, 164, 17, 0.774)), url("images/bg-quote.png");
+    background-position-x: 0, -14rem;
+    background-position-y: 0, -24rem;
+    padding: 10rem 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .quote h3 {
+    padding-top: 2rem;
+  }
+  .subscribe {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .subscribe .subscribe-form {
+    font-size: 2rem;
+  }
+  .subscribe .subscribe-form input[type=email] {
+    border: 1px solid rgb(243, 238, 238);
+    padding: 1rem;
+  }
+  .subscribe .subscribe-form button {
+    background-color: #fec201;
+    /*border-t használom az input és a button elem közti magasság kiküszöbölésére*/
+    border: 1px solid #fec201;
+    padding: 1rem;
+    text-transform: capitalize;
+  }
 }/*# sourceMappingURL=style.css.map */
