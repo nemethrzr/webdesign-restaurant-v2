@@ -34,14 +34,24 @@ p{
 }
 
 .header{
-    background-image: url(images/header2.svg), url(images/header2.svg);
-    height: 50vh;
-    background-repeat: no-repeat ,no-repeat;
-    background-position: left top,right bottom;
-    background-size: auto,125px 175px;
-
+    background: url(images/header1.png), ; 
+    background-repeat: no-repeat;
+    background-color: #2F2F2F;
+    height: 790px;
+    overflow: hidden;
+   
+    .header-content{
+        background: url(images/header2.png);
+        
+        background-repeat: no-repeat;
+        background-position-y: -80px;
+        background-position-x: 440px;
+        width: 100vw;
+        height: 100vh;
+        
+    }
 }
 
 img{
-    background-color: red;
+    
 }
