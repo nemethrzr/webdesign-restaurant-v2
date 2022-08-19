@@ -335,4 +335,42 @@ p {
             }
         }
     }
+
+
+
+    .footer{
+        display:flex;
+        background-color: $bg-color;
+        color: $white;
+        h3{
+            font-family: 'Roboto';
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: center;
+            gap: 2rem;
+            padding-right: 2rem;
+            .social{
+                font-size: 3rem;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .nav{
+            ul{
+                list-style-type: none;
+                padding: 2rem 0;
+                li{
+                    padding: 0.2rem 0;
+                    a{
+                        font-weight: 100;
+                        color: $white;
+                    }
+                    
+                }
+            }
+        }
+    }
 }
