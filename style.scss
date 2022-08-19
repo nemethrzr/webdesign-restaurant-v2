@@ -1,3 +1,5 @@
+$white: #ffffff;
+
 html{
     font-size: 10px;
 }
@@ -21,16 +23,40 @@ p{
     align-items: center;
     padding-left: 4rem;
     padding-right: 4rem;
+    position: absolute;
+    width: 100vw;
+    
+    
     .nav-items{
         display: flex;
 
         .nav-item{
             padding: 4rem;
-
-
+            
+           
         }
 
     }
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+        
+    }
+    .search{
+        button{
+            background-color: transparent;
+            border: 0;
+            font-size:2rem;
+            color: $white;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    }
+    
 }
 
 .header{

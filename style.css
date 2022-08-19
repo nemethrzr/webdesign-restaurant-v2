@@ -26,12 +26,30 @@ p {
   align-items: center;
   padding-left: 4rem;
   padding-right: 4rem;
+  position: absolute;
+  width: 100vw;
 }
 .navbar .nav-items {
   display: flex;
 }
 .navbar .nav-items .nav-item {
   padding: 4rem;
+}
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar .search button {
+  background-color: transparent;
+  border: 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.navbar .search button:hover {
+  cursor: pointer;
 }
 
 .header {
